@@ -7,11 +7,12 @@ body,html{
 }
 
 .chat{
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
 }
 .card{
-	height: 500px;
+	height: 550px;
+	width : 100%;
+	max-width: 800px;
 	border-radius: 15px !important;
 	background-color: rgba(0,0,0,0.4) !important;
 }
@@ -31,6 +32,29 @@ body,html{
 border-radius: 0 0 15px 15px !important;
 	border-top: 0 !important;
 }
+.input-group-text{
+	background-color:  rgba(0,0,0,0.4) !important;
+	color : white;
+}
+.form-control{
+	background-color:  rgba(0,0,0,0.4) !important;
+	color : white;
+
+}
+.attach_btn, .send_btn {
+    border: none;
+    border-radius: 50%; /* Make icons circular */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 5px; /* Spacing between icons */
+}
+
+
+
 .container{
 	align-content: center;
 }
@@ -51,7 +75,7 @@ border-radius: 0 0 15px 15px !important;
 	height: 60px !important;
 	overflow-y: auto;
 }
-	.type_msg:focus{
+.type_msg:focus{
 	 box-shadow:none !important;
    outline:0px !important;
 }
@@ -69,13 +93,7 @@ border-radius: 0 0 15px 15px !important;
 	color: white !important;
 	cursor: pointer;
 }
-.search_btn{
-	border-radius: 0 15px 15px 0 !important;
-	background-color: rgba(0,0,0,0.3) !important;
-	border:0 !important;
-	color: white !important;
-	cursor: pointer;
-}
+
 .contacts{
 	list-style: none;
 	padding: 0;
@@ -108,6 +126,12 @@ border-radius: 0 0 15px 15px !important;
 .img_cont_msg{
 	height: 40px;
 	width: 40px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 60;
+    border-radius: 32px;
 }
 .online_icon{
 	position: absolute;
@@ -220,4 +244,11 @@ border-radius: 0 0 15px 15px !important;
 	.contacts_card{
 	margin-bottom: 15px !important;
 }
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* White with some transparency */
+}
+#text{
+	color: #f5f6fa;
 }

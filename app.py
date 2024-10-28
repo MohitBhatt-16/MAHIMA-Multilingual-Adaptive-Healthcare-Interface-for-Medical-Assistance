@@ -7,12 +7,13 @@ from src.prompt import *
 import os
 from flask import Flask, render_template, jsonify, request
 # from langchain_groq import ChatGroq
+from flask import Flask
 from pinecone import Pinecone
 
 
 app = Flask(__name__)
 
-load_dotenv()
+# load_dotenv()
 
 # PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 # GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
